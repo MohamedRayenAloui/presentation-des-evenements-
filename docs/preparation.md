@@ -28,7 +28,7 @@ Le site mettra l'accent sur une expérience utilisateur fluide et immersive, ave
 
 ## Sites de Référence
 - [Twitch](https://www.twitch.tv/) : Pour les diffusions en direct et les interfaces immersives.
-- [E3 Expo](https://www.e3expo.com/) : Inspiration pour la structure des pages d'événements.
+- [Start.gg](https://www.start.gg/) : Inspiration pour la structure des pages d'événements.
 - [ESL Gaming](https://www.eslgaming.com/) : Présentation des équipes et tournois.
 
 ---
@@ -45,6 +45,9 @@ Le site mettra l'accent sur une expérience utilisateur fluide et immersive, ave
 ---
 
 ## Wireframes des Interfaces Graphiques
+Un modèle de site que nous avons créé pour les maquettes.
+[https://adamouenza.github.io/SitePWAModel/](https://adamouenza.github.io/SitePWAModel/)
+
 Voici quelques wireframes préliminaires pour les pages principales :
 
 1. **Page d'accueil** :
@@ -52,13 +55,30 @@ Voici quelques wireframes préliminaires pour les pages principales :
    - Une section "Prochains matchs".
    - Un footer avec les liens vers les réseaux sociaux et partenaires.
 
+  ![](/images/accueilPC.png)
+
+  ![](/images/acceuilMobile.png)
+
+
+
 2. **Page détail d'événement** :
-   - Informations clés à gauche (date, lieu, description).
+   - Informations clés (date, lieu, description).
    - Lien du Vidéo ou du streaming en direct.
-   - Liste des équipes/joueurs à droite.
+   - Liste des équipes/joueurs.
+
+  ![](/images/eventPC.png)
+
+  ![](/images/eventMobile.png)
+
 
 3. **Page Classement et Statistiques** :
    - **Classements** : Tableau interactif listant les meilleures équipes et joueurs avec points, victoires, défaites, et pourcentage de réussite.
    - **Statistiques** : Visualisation des performances actuelles (scores, MVP).
    - **Faits Marquants** : Vidéos ou extraits des moments clés, intégrés avec Twitch ou YouTube.
    - **Historique** : Performances des équipes et records marquants pour les saisons passées.
+
+  ![](/images/statsPC.png)
+
+  ![](/images/statsMobile.png)
+
+
