@@ -12,8 +12,8 @@ export default function Header() {
                 <h1>Esports Hub</h1>
             <nav className={styles.nav}>
                 <a href="/" className={styles.navLink}>Accueil</a>
-                <a href="/events" className={styles.navLink}>Événement 2</a>
-                <a href="/ranking" className={styles.navLink}>Événement 2</a>
+                <a href="/events" className={styles.navLink}>Événement</a>
+                <a href="/ranking" className={styles.navLink}>Événement</a>
             </nav>
             </div>
 
