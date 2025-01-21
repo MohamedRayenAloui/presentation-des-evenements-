@@ -1,6 +1,6 @@
 import Image from "next/image"
 import styles from "./Acceuil.module.css"
-export default function AcceuilPage() {
+export default function Acceuil() {
     return <>
         <section className={styles.hero}>
             <h2>Esports Hub</h2>
@@ -28,7 +28,6 @@ export default function AcceuilPage() {
                     referrerPolicy="strict-origin-when-cross-origin"
                     allowFullScreen>
                 </iframe>
-
             </div>
         </section>
 

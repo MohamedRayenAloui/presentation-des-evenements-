@@ -1,6 +1,5 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Acceuil from "@/components/Acceuil";
 
 import styles from "./layout.module.css";
 import "./globals.css";
@@ -16,8 +15,6 @@ export default function RootLayout({ children }) {
             <Header />
 
             <main>
-
-                <Acceuil />
 
                 {children}
 
