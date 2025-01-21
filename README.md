@@ -11,18 +11,10 @@ Le site mettra l'accent sur une expérience utilisateur fluide et immersive, ave
 - **Page d'accueil dynamique** :
   - Événements populaires en vedette.
   - Actualités et annonces des tournois.
+  
 - **Section détaillée pour chaque événement** :
   - Nom, date, horaires, lieu, et règles du tournoi.
   - Informations sur les équipes et les joueurs.
-- **Page Classement et Statistiques** :
-  - Tableau des meilleures équipes et joueurs.
-  - Statistiques des performances pour les événements.
-  - Historique des performances pour les saisons passées.
-  - Faits marquants, comme les meilleurs moments ou records.
-
-- **Inscription aux événements** :
-  - Participation en tant que spectateur.
-  - Intégration avec des plateformes comme Twitch.
 
 ---
 
@@ -55,9 +47,9 @@ Voici quelques wireframes préliminaires pour les pages principales :
    - Une section "Prochains matchs".
    - Un footer avec les liens vers les réseaux sociaux et partenaires.
 
-  ![](/images/accueilPC.png)
+  ![](/public/accueilPC.png)
 
-  ![](/images/acceuilMobile.png)
+  ![](/public/acceuilMobile.png)
 
 
 
@@ -66,20 +58,13 @@ Voici quelques wireframes préliminaires pour les pages principales :
    - Lien du Vidéo ou du streaming en direct.
    - Liste des équipes/joueurs.
 
-  ![](/images/eventPC.png)
+  ![](/public/eventPC.png)
 
-  ![](/images/eventMobile.png)
+  ![](/public/eventMobile.png)
 
 
-3. **Page Classement et Statistiques** :
-   - **Classements** : Tableau interactif listant les meilleures équipes et joueurs avec points, victoires, défaites, et pourcentage de réussite.
-   - **Statistiques** : Visualisation des performances actuelles (scores, MVP).
-   - **Faits Marquants** : Vidéos ou extraits des moments clés, intégrés avec Twitch ou YouTube.
-   - **Historique** : Performances des équipes et records marquants pour les saisons passées.
 
-  ![](/images/statsPC.png)
 
-  ![](/images/statsMobile.png)
 
 
 
