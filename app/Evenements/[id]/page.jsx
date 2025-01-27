@@ -31,7 +31,7 @@ const eventDetails = {
         description: `
         Rejoignez-nous pour un événement spectaculaire dédié à Valorant, où les joueurs les plus talentueux et leurs équipes repoussent les limites du possible. 
         Avec une ambiance électrique et des performances de classe mondiale, vivez une immersion totale dans l'univers compétitif de ce FPS emblématique. 
-        Préparez-vous à des duels épiques, des tactiques ingénieuses et une communauté passionnée !`,        
+        Préparez-vous à des duels épiques, des tactiques ingénieuses et une communauté passionnée !`,
         date: "2025-03-10",
         time: "20:00",
         images: [valo, valo1],

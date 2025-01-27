@@ -5,54 +5,54 @@
     color: #ffffff;
     background: linear-gradient(360deg, #121212 90%, #1a73e8 100%);
     padding: 20px 40px;
-    position: sticky; 
-    top: 0;           
-    z-index: 999;     
+    position: sticky;
+    top: 0;
+    z-index: 999;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  .logoContainer {
+}
+
+.logoContainer {
     display: flex;
     align-items: center;
-  }
-  
-  .logoContainer img {
+}
+
+.logoContainer img {
     width: 80px;
     height: auto;
     transition: transform 0.3s ease;
-  }
-  
-  .logoContainer:hover img {
+}
+
+.logoContainer:hover img {
     transform: scale(1.1);
-  }
-  
-  .content {
+}
+
+.content {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-  }
-  
-  .content h1 {
+}
+
+.content h1 {
     margin: 0;
     font-size: 1.8rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-  }
-  
-  .nav {
+}
+
+.nav {
     margin-top: 10px;
     font-size: 1rem;
-  }
-  
-  .navLink {
+}
+
+.navLink {
     color: #ffffff;
     margin-left: 20px;
     text-decoration: none;
     position: relative;
     transition: color 0.2s ease;
-  }
-  
-  .navLink::after {
+}
+
+.navLink::after {
     content: "";
     position: absolute;
     left: 0;
@@ -61,29 +61,28 @@
     height: 2px;
     background-color: #ffffff;
     transition: width 0.4s ease;
-  }
-  
-  .navLink:hover {
+}
+
+.navLink:hover {
     color: #ffffff;
-  }
-  
-  .navLink:hover::after {
+}
+
+.navLink:hover::after {
     width: 100%;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .header {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
-  
+
     .content {
-      align-items: center;
-      margin-top: 10px;
+        align-items: center;
+        margin-top: 10px;
     }
-  
+
     .navLink {
-      margin-left: 10px;
+        margin-left: 10px;
     }
-  }
-  
+}

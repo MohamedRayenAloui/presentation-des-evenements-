@@ -8,8 +8,8 @@ import "./globals.css";
 
 const roboto = Roboto({
     subsets: ["latin"],
-    weight: ["400","700"],
-    style:["normal","italic"],
+    weight: ["400", "700"],
+    style: ["normal", "italic"],
     display: "swap",
     variable: "--font-roboto"
 });
