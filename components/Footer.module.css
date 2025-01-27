@@ -20,7 +20,7 @@
   
   .socialContainer a:hover {
     transform: scale(1.1);
-    color: #fff;
+    color: #ffffff;
   }
   
   .partners {
@@ -36,7 +36,7 @@
   }
   
   .partners a:hover {
-    color: #fff;
+    color: #ffffff;
   }
   
   .footer p {
