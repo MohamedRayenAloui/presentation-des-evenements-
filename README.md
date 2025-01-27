@@ -31,8 +31,7 @@ Le site mettra l'accent sur une expérience utilisateur fluide et immersive, ave
   - Blanc (texte) : `#ffffff`.
   - Bleu électrique (accents) : `#1a73e8`.
 - **Secondaires** :
-  - Rouge vif (actions importantes) : `#e53935`.
-  - Gris clair (fonds secondaires) : `#2a2a2a`.
+  - Gris clair (fonds secondaires) : `#121212`.
 
 ---
 

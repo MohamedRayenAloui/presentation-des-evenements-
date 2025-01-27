@@ -2,7 +2,7 @@ import Image from "next/image"
 import styles from "./Acceuil.module.css"
 export default function Acceuil() {
     return <>
-        <section className={styles.hero}>
+        <section className={styles.section}>
             <h2>Esports Hub</h2>
             <p>
                 La plateforme incontournable pour les passionnés de jeux vidéo et d'esports !

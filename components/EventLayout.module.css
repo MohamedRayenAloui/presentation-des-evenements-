@@ -1,0 +1,92 @@
+.container {
+    padding: 20px;
+    color: white;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1a73e8;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.dateTime {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.mediaContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    flex-direction: column;
+
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    aspect-ratio: 16 / 9;
+    border: none;
+    overflow: hidden;
+}
+
+.teamsContainer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #121212;
+    border-radius: 8px;
+}
+
+.teams {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team {
+    flex: 1;
+    min-width: 250px;
+}
+
+.team h3 {
+    margin-bottom: 10px;
+    color: #1a73e8;
+}
+
+.team ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.team ul li {
+    margin-bottom: 5px;
+    color: #ccc;
+}
+
+.additionalContent {
+    margin-top: 30px;
+    font-size: 1rem;
+    text-align: center;
+}
+

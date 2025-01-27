@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    font-family: var(--font-roboto);
 }
 
 body {
@@ -10,4 +11,8 @@ body {
 *:before,
 *:after {
     box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-poppins);
 }
