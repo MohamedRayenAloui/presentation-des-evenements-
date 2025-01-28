@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+import styles from "./EvenementPage.module.css";
+
 import valo from "/public/valorant.png";
 import csgo from "/public/csgo.png";
-import styles from "./EvenementPage.module.css";
 
 export default function EvenementPage() {
     const events = [

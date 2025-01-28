@@ -1,5 +1,6 @@
 import Image from "next/image"
 import styles from "./Acceuil.module.css"
+
 export default function Acceuil() {
     return <>
         <section className={styles.section}>
