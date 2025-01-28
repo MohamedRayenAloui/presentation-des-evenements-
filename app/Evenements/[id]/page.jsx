@@ -1,4 +1,7 @@
+import Link from "next/link";
 import EventLayout from "@/components/EventLayout";
+import styles from "./page.module.css";
+
 import valo from "@/public/valorant.png";
 import valo1 from "@/public/valorant1.png";
 import csgo from "@/public/csgo.png";
@@ -52,6 +55,17 @@ const eventDetails = {
 export default function EventDetail({ params }) {
     const { id } = params;
     const event = eventDetails[id];
+
+    if (!event) {
+        return (
+            <div className={styles.div}>
+                <h1>Erreur 404</h1>
+                <p>Événement non trouvé. Veuillez vérifier l'URL ou retourner à la
+                    <Link href="/" className={styles.Link}> page d'accueil.</Link>
+                </p>
+            </div>
+        );
+    }
 
     return (
         <EventLayout

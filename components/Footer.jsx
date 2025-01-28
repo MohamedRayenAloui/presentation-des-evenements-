@@ -29,7 +29,7 @@ export default function Footer() {
             </div>
 
             <p>
-                &copy; Rayen Aloui &amp; Adam Ouenza
+                &copy; 2025 -  Rayen Aloui &amp; Adam Ouenza
             </p>
         </footer>
     );
