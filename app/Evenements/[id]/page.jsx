@@ -1,5 +1,5 @@
 import EventLayout from "@/components/EventLayout";
-import NotFound from "@/app/not-found";
+import { notFound } from "next/navigation";
 
 import valo from "@/public/valorant.png";
 import valo1 from "@/public/valorant1.png";
@@ -51,12 +51,12 @@ const eventDetails = {
     },
 };
 
-export default function EventDetail({ params }) {
-    const { id } = params;
+export default async function EventDetail({ params }) {
+    const { id } = await params;
     const event = eventDetails[id];
 
     if (!event) {
-        return NotFound();
+        notFound();
     }
 
     return (
@@ -75,4 +75,3 @@ export default function EventDetail({ params }) {
         </EventLayout>
     );
 }
-
