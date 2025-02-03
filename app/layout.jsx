@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { Roboto, Poppins } from "next/font/google";
 
+import { Roboto, Poppins } from "next/font/google";
 import styles from "./layout.module.css";
 import "./globals.css";
 
