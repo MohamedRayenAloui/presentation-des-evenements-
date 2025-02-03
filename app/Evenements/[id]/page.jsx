@@ -51,8 +51,8 @@ const eventDetails = {
     },
 };
 
-export default async function EventDetail({ params }) {
-    const { id } = await params;
+export default function EventDetail({ params }) {
+    const { id } = params;
     const event = eventDetails[id];
 
     if (!event) {

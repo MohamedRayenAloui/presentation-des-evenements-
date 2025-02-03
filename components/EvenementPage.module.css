@@ -49,6 +49,7 @@
 .detailsLink {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 .detailsLink:hover,

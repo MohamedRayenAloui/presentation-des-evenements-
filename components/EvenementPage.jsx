@@ -1,11 +1,12 @@
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
 import styles from "./EvenementPage.module.css";
 
 import valo from "/public/valorant.png";
 import csgo from "/public/csgo.png";
 
-export default function EvenementPage() {
+export default function EvenementPage({ onEventSelect }) {
     const events = [
         {
             id: "1",
@@ -30,24 +31,20 @@ export default function EvenementPage() {
             <h1>Événements</h1>
             <div className={styles.eventGrid}>
                 {events.map((event) => (
-                    <Link
+                    <div
                         key={event.id}
-                        href={`/Evenements/${event.id}`}
+                        onClick={() => onEventSelect(event.id)}
                         className={styles.detailsLink}
                     >
                         <div className={styles.eventCard}>
-                            <Image
-                                src={event.image}
-                                alt={event.name}
-                                className={styles.eventImage}
-                            />
+                            <Image src={event.image} alt={event.name} className={styles.eventImage} />
                             <h2>{event.name}</h2>
                             <p>{event.description}</p>
                             <p>
                                 <strong>Date:</strong> {event.date} | <strong>Heure:</strong> {event.time}
                             </p>
                         </div>
-                    </Link>
+                    </div>
                 ))}
             </div>
         </section>

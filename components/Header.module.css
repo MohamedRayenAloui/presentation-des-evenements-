@@ -20,6 +20,7 @@
     width: 80px;
     height: auto;
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .logoContainer:hover img {
@@ -50,6 +51,7 @@
     text-decoration: none;
     position: relative;
     transition: color 0.2s ease;
+    cursor: pointer;
 }
 
 .navLink::after {
