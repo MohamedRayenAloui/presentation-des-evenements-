@@ -1,18 +1,22 @@
+/* Définit le modèle de boîte et la police par défaut pour l'élément html */
 html {
     box-sizing: border-box;
     font-family: var(--font-roboto);
 }
 
+/* Définit la couleur de fond de la page */
 body {
     background-color: #0e0e0e;
 }
 
+/* Définit le modèle de boîte hérité pour tous les éléments et pseudo-éléments */
 *,
 *:before,
 *:after {
     box-sizing: inherit;
 }
 
+/* Définit la police par défaut pour les titres */
 h1,
 h2,
 h3,

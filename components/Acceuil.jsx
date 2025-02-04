@@ -9,7 +9,7 @@ export default function Acceuil() {
     return <>
         {/* Section principale de la page d'accueil */}
         <section className={styles.section}>
-            <h2>Esports Hub</h2>
+            <h1>Esports Hub</h1>
             <p>
                 La plateforme incontournable pour les passionnés de jeux vidéo et d'esports !
             </p>

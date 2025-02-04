@@ -41,7 +41,6 @@ export default function EvenementPage({ onEventSelect }) {
                     <div
                         key={event.id} // Clé unique pour chaque événement
                         onClick={() => onEventSelect(event.id)} // Gestion de la sélection de l'événement
-                        className={styles.detailsLink}
                     >
                         <div className={styles.eventCard}>
                             <Image src={event.image} alt={event.name} className={styles.eventImage} />

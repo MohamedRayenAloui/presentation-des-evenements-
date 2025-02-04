@@ -1,3 +1,4 @@
+/* Style pour le pied de page */
 .footer {
     color: #ffffff;
     background: linear-gradient(180deg, #121212 90%, #1a73e8 100%);
@@ -7,10 +8,12 @@
     font-family: "Helvetica", sans-serif;
 }
 
+/* Conteneur pour les liens sociaux */
 .socialContainer {
     margin-bottom: 15px;
 }
 
+/* Style pour les liens sociaux */
 .socialContainer a {
     margin: 0 15px;
     font-size: 1.5rem;
@@ -18,15 +21,18 @@
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
+/* Effet au survol des liens sociaux */
 .socialContainer a:hover {
     transform: scale(1.1);
     color: #ffffff;
 }
 
+/* Conteneur pour les partenaires */
 .partners {
     margin-bottom: 15px;
 }
 
+/* Style pour les liens des partenaires */
 .partners a {
     margin: 0 15px;
     color: #1a73e8;
@@ -35,10 +41,12 @@
     transition: color 0.3s ease;
 }
 
+/* Effet au survol des liens des partenaires */
 .partners a:hover {
     color: #ffffff;
 }
 
+/* Style pour les paragraphes dans le pied de page */
 .footer p {
     line-height: 1.6;
 }
