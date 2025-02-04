@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import Acceuil from "@/components/Acceuil";
 import EvenementPage from "@/components/EvenementPage";
 import EventDetail from "@/app/Evenements/[id]/page";
+import NotFound from "@/app/not-found";
 
 import { Roboto, Poppins } from "next/font/google";
 import styles from "./layout.module.css";
@@ -48,7 +49,7 @@ export default function RootLayout() {
     } else if (view === "eventDetail") {
         content = <EventDetail params={{ id: selectedEventId }} />;
     } else {
-        content = <div>Page Not Found</div>;
+        content = <NotFound />;
     }
     return <html lang="en" className={`${roboto.variable} ${poppins.variable}`}>
         <body className={styles.body}>

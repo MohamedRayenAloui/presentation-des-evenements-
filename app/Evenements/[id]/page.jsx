@@ -1,5 +1,5 @@
 import EventLayout from "@/components/EventLayout";
-import { notFound } from "next/navigation";
+import NotFound from "@/app/not-found";
 
 import valo from "@/public/valorant.png";
 import valo1 from "@/public/valorant1.png";
@@ -56,7 +56,7 @@ export default function EventDetail({ params }) {
     const event = eventDetails[id];
 
     if (!event) {
-        notFound();
+        return <NotFound />;
     }
 
     return (

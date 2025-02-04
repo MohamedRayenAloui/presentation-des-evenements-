@@ -4,17 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 59vh;
+    min-height: calc(100vh - 366px);
     flex-direction: column;
-}
-
-.Link {
-    color: #1a73e8;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.Link:hover {
-    color: #0c47a1;
 }
