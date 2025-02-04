@@ -9,8 +9,14 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Style pour les titres de niveau 1 dans la section */
+/* Style pour les titres de niveau 1 et 2 dans la section */
 .section h1 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.section h2 {
     margin-bottom: 10px;
     font-size: 1.8rem;
     letter-spacing: 1px;

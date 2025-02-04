@@ -8,3 +8,15 @@
     min-height: calc(100vh - 366px);
     flex-direction: column;
 }
+
+/* Style pour le lien */
+.Link {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.Link:hover {
+    color: #0c47a1;
+}

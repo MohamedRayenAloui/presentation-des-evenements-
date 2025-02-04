@@ -9,5 +9,5 @@
 
 /* Définit le style pour l'élément principal */
 .main {
-    flex: 1;/* Permet à l'élément de prendre tout l'espace disponible */
+    flex: 1; /* Permet à l'élément de prendre tout l'espace disponible */
 }

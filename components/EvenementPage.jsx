@@ -1,9 +1,8 @@
 // Code source de la page des événements
 
-"use client"; // Indique que le code est destiné au client
-
 // Importation du composant Image de Next.js et des styles CSS
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./EvenementPage.module.css";
 
 // Importation des images des jeux
@@ -11,7 +10,7 @@ import valo from "/public/valorant.png";
 import csgo from "/public/csgo.png";
 
 // Fonction principale qui affiche la page des événements
-export default function EvenementPage({ onEventSelect }) {
+export default function EvenementPage() {
     // Données des événements
     const events = [
         {
@@ -38,19 +37,24 @@ export default function EvenementPage({ onEventSelect }) {
             <h1>Événements</h1>
             <div className={styles.eventGrid}>
                 {events.map((event) => ( // Parcours de la liste des événements
-                    <div
+                    <Link
                         key={event.id} // Clé unique pour chaque événement
-                        onClick={() => onEventSelect(event.id)} // Gestion de la sélection de l'événement
+                        href={`/Evenements/${event.id}`} // Gestion de la sélection de l'événement
+                        className={styles.detailsLink}
                     >
                         <div className={styles.eventCard}>
-                            <Image src={event.image} alt={event.name} className={styles.eventImage} />
+                            <Image
+                                src={event.image}
+                                alt={event.name}
+                                className={styles.eventImage}
+                            />
                             <h2>{event.name}</h2>
                             <p>{event.description}</p>
                             <p>
                                 <strong>Date:</strong> {event.date} | <strong>Heure:</strong> {event.time}
                             </p>
                         </div>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </section>

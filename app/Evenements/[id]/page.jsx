@@ -2,9 +2,8 @@
 
 // Importation des cmposants React
 import EventLayout from "@/components/EventLayout";
-import NotFound from "@/app/not-found";
+import { notFound } from "next/navigation";
 
-// Importation des images des jeux
 import valo from "@/public/valorant.png";
 import valo1 from "@/public/valorant1.png";
 import csgo from "@/public/csgo.png";
@@ -62,7 +61,7 @@ export default function EventDetail({ params }) {
     const event = eventDetails[id]; // Récupération des détails de l'événement correspondant à l'identifiant
 
     if (!event) {
-        return <NotFound />; // Affichage de la page d'erreur 404 si l'événement n'existe pas
+        notFound(); // Affichage de la page d'erreur 404 si l'événement n'existe pas
     }
 
     // Affichage des détails de l'événement

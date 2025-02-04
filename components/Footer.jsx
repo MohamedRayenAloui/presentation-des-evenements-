@@ -4,7 +4,6 @@
 import { FaFacebookF, FaTwitter, FaInstagram, FaTwitch } from "react-icons/fa";
 import styles from "./Footer.module.css";
 
-// Fonction pour afficher le pied de page de l'application
 export default function Footer() {
     return (
         <footer className={styles.footer}>

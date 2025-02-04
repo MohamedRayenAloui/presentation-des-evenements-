@@ -7,7 +7,7 @@
     border: 1px solid #1a73e8;
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-    min-height: calc(100vh - 366px)
+    min-height: calc(100vh - 366px);
 }
 
 /* Style pour les titres de niveau 1 */
@@ -35,7 +35,6 @@
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
 }
 
 /* Effet au survol de la carte d'événement */
@@ -51,4 +50,14 @@
     border-radius: 8px;
     margin-bottom: 15px;
     max-width: 100%;
+}
+
+.detailsLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+.detailsLink:hover,
+.detailsLink:focus {
+    color: #ffffff;
 }

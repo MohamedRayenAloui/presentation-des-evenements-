@@ -4,7 +4,6 @@
 import Image from "next/image";
 import styles from "./EventLayout.module.css";
 
-// Fonction principale qui affiche la mise en page d'un événement
 export default function EventLayout({
     name,
     description,
@@ -27,7 +26,7 @@ export default function EventLayout({
                 {images[0] && <Image src={images[0]} alt="Image 1" className={styles.image} />}
                 {iframeSrc && (
                     <iframe
-                        src={`https://player.twitch.tv/?channel=${iframeSrc}&parent=localhost`} 
+                        src={`https://player.twitch.tv/?channel=${iframeSrc}&parent=localhost`}
                         frameBorder="0"
                         allowFullScreen
                         className={styles.iframe}

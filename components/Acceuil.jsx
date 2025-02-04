@@ -1,10 +1,6 @@
-// Code source du composant de la page d'accueil de l'application
-
-// Importation du composant Image de Next.js et des styles CSS
 import Image from "next/image"
 import styles from "./Acceuil.module.css"
 
-// Fonction principale qui affiche la page d'accueil
 export default function Acceuil() {
     return <>
         {/* Section principale de la page d'accueil */}
