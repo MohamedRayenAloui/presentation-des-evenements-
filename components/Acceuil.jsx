@@ -1,8 +1,13 @@
+// Code source du composant de la page d'accueil de l'application
+
+// Importation du composant Image de Next.js et des styles CSS
 import Image from "next/image"
 import styles from "./Acceuil.module.css"
 
+// Fonction principale qui affiche la page d'accueil
 export default function Acceuil() {
     return <>
+        {/* Section principale de la page d'accueil */}
         <section className={styles.section}>
             <h2>Esports Hub</h2>
             <p>
@@ -13,6 +18,7 @@ export default function Acceuil() {
             </div>
         </section>
 
+        {/* Sections supplémentaires de la page d'accueil */}
         <section className={styles.section}>
             <h2>Découvrez un monde compétitif</h2>
             <p>

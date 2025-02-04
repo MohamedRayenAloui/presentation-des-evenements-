@@ -1,6 +1,10 @@
+// Code pour afficher le pied de page de l'application
+
+// Importations des icônes des réseaux sociaux et des styles CSS
 import { FaFacebookF, FaTwitter, FaInstagram, FaTwitch } from "react-icons/fa";
 import styles from "./Footer.module.css";
 
+// Fonction pour afficher le pied de page de l'application
 export default function Footer() {
     return (
         <footer className={styles.footer}>
@@ -8,6 +12,7 @@ export default function Footer() {
                 Suivez-nous sur les réseaux sociaux et découvrez nos partenaires.
             </p>
 
+            {/* Liens vers les réseaux sociaux */}
             <div className={styles.socialContainer}>
                 <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                     <FaFacebookF />
@@ -23,6 +28,7 @@ export default function Footer() {
                 </a>
             </div>
 
+            {/* Liens vers les partenaires */}
             <div className={styles.partners}>
                 <a href="#" target="_blank" rel="noopener noreferrer">Partenaire 1</a>
                 <a href="#" target="_blank" rel="noopener noreferrer">Partenaire 2</a>

@@ -1,5 +1,8 @@
+// Code pour la page d'erreur 404
+
 import styles from './not-found.module.css';
 
+// Fonction pour afficher la page d'erreur 404
 export default function NotFound() {
     return (
         <div className={styles.div}>

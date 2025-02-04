@@ -1,11 +1,16 @@
+// Page de détails d'un événement.
+
+// Importation des cmposants React
 import EventLayout from "@/components/EventLayout";
 import NotFound from "@/app/not-found";
 
+// Importation des images des jeux
 import valo from "@/public/valorant.png";
 import valo1 from "@/public/valorant1.png";
 import csgo from "@/public/csgo.png";
 import csgo1 from "@/public/csgo1.png";
 
+// Détails des événements
 const eventDetails = {
     "1": {
         name: "Tournoi CS:GO",
@@ -15,8 +20,8 @@ const eventDetails = {
         Que vous soyez joueur ou spectateur, cet événement est une célébration de l'e-sport à son apogée.`,
         date: "2025-02-15",
         time: "18:00",
-        images: [csgo, csgo1],
-        iframeSrc: "lirik_247",
+        images: [csgo, csgo1], // Images associées à l'événement
+        iframeSrc: "lirik_247", // Identifiant du stream Twitch
         teams: [
             {
                 name: "Equipe A",
@@ -51,14 +56,16 @@ const eventDetails = {
     },
 };
 
+// Fonction principale qui affiche les détails d'un événement
 export default function EventDetail({ params }) {
-    const { id } = params;
-    const event = eventDetails[id];
+    const { id } = params; // Récupération de l'identifiant de l'événement
+    const event = eventDetails[id]; // Récupération des détails de l'événement correspondant à l'identifiant
 
     if (!event) {
-        return <NotFound />;
+        return <NotFound />; // Affichage de la page d'erreur 404 si l'événement n'existe pas
     }
 
+    // Affichage des détails de l'événement
     return (
         <EventLayout
             name={event.name}

@@ -1,6 +1,10 @@
+// Code: Composant qui affiche la mise en page d'un événement avec ses détails
+
+// Importation du composant Image de Next.js et des styles CSS
 import Image from "next/image";
 import styles from "./EventLayout.module.css";
 
+// Fonction principale qui affiche la mise en page d'un événement
 export default function EventLayout({
     name,
     description,
@@ -19,10 +23,11 @@ export default function EventLayout({
                 <strong>Date:</strong> {date} | <strong>Heure:</strong> {time}
             </p>
             <div className={styles.mediaContainer}>
+                {/* Affichage des images et de la vidéo en direct de l'événement */}
                 {images[0] && <Image src={images[0]} alt="Image 1" className={styles.image} />}
                 {iframeSrc && (
                     <iframe
-                        src={`https://player.twitch.tv/?channel=${iframeSrc}&parent=localhost`}
+                        src={`https://player.twitch.tv/?channel=${iframeSrc}&parent=localhost`} 
                         frameBorder="0"
                         allowFullScreen
                         className={styles.iframe}
@@ -30,6 +35,7 @@ export default function EventLayout({
                 )}
                 {images[1] && <Image src={images[1]} alt="Image 2" className={styles.image} />}
             </div>
+            {/* Affichage des équipes participantes */}
             {teams && (
                 <div className={styles.teamsContainer}>
                     <h2>Équipes</h2>
@@ -47,6 +53,7 @@ export default function EventLayout({
                     </div>
                 </div>
             )}
+            {/* Affichage du contenu supplémentaire */}
             {children && <div className={styles.additionalContent}>{children}</div>}
         </section>
     );
