@@ -1,0 +1,87 @@
+/* Container to center the form */
+.container {
+    padding: 30px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(150deg, #0e0e0e 50%, #1a73e8 100%);
+    border: 1px solid #1a73e8;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    min-height: calc(100vh - 366px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main form styling */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 30px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Center labels */
+.form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Input and textarea styling */
+.form input,
+.form textarea {
+    padding: 0.7rem;
+    border-radius: 5px;
+    border: 1px solid #1a73e8;
+    background: #121212;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    margin: 10px auto;
+}
+
+/* Prevent textarea from resizing */
+.form textarea {
+    resize: none;
+}
+
+/* Animated button */
+.form button {
+    padding: 0.7rem;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, background 0.3s ease;
+    border-radius: 5px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+/* Button hover animation */
+.form button:hover {
+    background-color: #135abe;
+    transform: scale(1.05);
+}
+
+/* Button click animation */
+.form button:active {
+    transform: scale(0.95);
+}
+
+/* Error message styling */
+.erreur {
+    color: #ff4d4d;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
