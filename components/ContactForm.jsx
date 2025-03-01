@@ -71,15 +71,15 @@ export default function ContactForm() {
         <div className={styles.container}>
             <form action={formAction} className={styles.form} noValidate>
                 <label>
-                    Prénom:
-                    <input type="text" name="prenom" defaultValue={formState.prenom.valeur} />
-                    <div className={styles.erreur}>{formState.prenom.erreur}</div>
-                </label>
-
-                <label>
                     Nom:
                     <input type="text" name="nom" defaultValue={formState.nom.valeur} />
                     <div className={styles.erreur}>{formState.nom.erreur}</div>
+                </label>
+
+                <label>
+                    Prénom:
+                    <input type="text" name="prenom" defaultValue={formState.prenom.valeur} />
+                    <div className={styles.erreur}>{formState.prenom.erreur}</div>
                 </label>
 
                 <label>
@@ -89,15 +89,15 @@ export default function ContactForm() {
                 </label>
 
                 <label>
-                    Sujet:
-                    <input type="text" name="sujet" defaultValue={formState.sujet.valeur} />
-                    <div className={styles.erreur}>{formState.sujet.erreur}</div>
-                </label>
-
-                <label>
                     Téléphone:
                     <input type="tel" name="phone" defaultValue={formState.phone.valeur} />
                     <div className={styles.erreur}>{formState.phone.erreur}</div>
+                </label>
+
+                <label>
+                    Sujet:
+                    <input type="text" name="sujet" defaultValue={formState.sujet.valeur} />
+                    <div className={styles.erreur}>{formState.sujet.erreur}</div>
                 </label>
 
                 <label>
