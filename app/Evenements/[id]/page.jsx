@@ -56,8 +56,8 @@ const eventDetails = {
 };
 
 // Fonction principale qui affiche les détails d'un événement
-export default function EventDetail({ params }) {
-    const { id } = params; // Récupération de l'identifiant de l'événement
+export default async function EventDetail({ params }) {
+    const { id } = await params; // Récupération de l'identifiant de l'événement
     const event = eventDetails[id]; // Récupération des détails de l'événement correspondant à l'identifiant
 
     if (!event) {
