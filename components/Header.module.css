@@ -12,6 +12,13 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Conteneur pour le contenu */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 /* Conteneur pour le logo */
 .logoContainer {
     display: flex;
@@ -22,19 +29,12 @@
 .logoContainer img {
     width: 80px;
     height: auto;
-    transition: transform 0.3s ease;
+    transition: transform 0.6s ease;
 }
 
-/* Effet de zoom sur le logo au survol */
+/* Logo flips on hover */
 .logoContainer:hover img {
-    transform: scale(1.1);
-}
-
-/* Conteneur pour le contenu */
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    transform: rotateY(720deg) scale(1.2);
 }
 
 /* Style pour le titre */
@@ -43,7 +43,21 @@
     font-size: 1.8rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(90deg, #ffffff, #1a73e8, #ffffff);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s linear infinite;
 }
+
+@keyframes shine {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
 
 /* Style pour la navigation */
 .nav {
@@ -81,6 +95,18 @@
 .navLink:hover::after {
     width: 100%;
 }
+
+/* This makes the underline always visible for the active link */
+.navLink.active::after {
+    width: 100%;
+    background-color: #1a73e8;
+}
+
+/* Optional: Make active link bold or highlighted */
+.navLink.active {
+    color: #ffffff;
+}
+
 
 /* Styles pour les écrans de moins de 768px de large */
 @media (max-width: 768px) {
