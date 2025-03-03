@@ -8,6 +8,22 @@
     border: 1px solid #1a73e8;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    position: relative; 
+    overflow: hidden;
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 /* Style pour les titres de niveau 1 et 2 dans la section */
@@ -74,10 +90,10 @@
     height: auto;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transition: transform 0.75s ease, box-shadow 0.75s ease;
 }
 
 .imageContainer:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
 }
