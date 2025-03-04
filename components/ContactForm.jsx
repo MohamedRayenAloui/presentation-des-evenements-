@@ -70,6 +70,7 @@ export default function ContactForm() {
     return (
         <div className={styles.container}>
             <form action={formAction} className={styles.form} noValidate>
+            {successMessage && <div className={styles.success}>{successMessage}</div>}
                 <label>
                     Nom:
                     <input type="text" name="nom" defaultValue={formState.nom.valeur} />

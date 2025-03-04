@@ -54,8 +54,13 @@
 }
 
 @keyframes shine {
-    0% { background-position: 200% 0; }
-    100% { background-position: -200% 0; }
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
 }
 
 
@@ -109,7 +114,7 @@
 
 
 /* Styles pour les écrans de moins de 768px de large */
-@media (max-width: 768px) {
+@media (max-width: 568px) {
     .header {
         flex-direction: column;
         align-items: center;
