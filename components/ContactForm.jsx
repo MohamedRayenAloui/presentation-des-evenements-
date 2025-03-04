@@ -109,7 +109,6 @@ export default function ContactForm() {
 
                 <button type="submit">Envoyer</button>
             </form>
-            {successMessage && <div className={styles.success}>{successMessage}</div>}
         </div>
     );
 }
