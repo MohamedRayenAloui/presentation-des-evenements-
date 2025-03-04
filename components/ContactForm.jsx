@@ -15,7 +15,6 @@ export default function ContactForm() {
      */
     const handleSubmit = async (previousState, formData) => {
 
-        useRouter
         let [erreur, newState] = validateContact(formData);
         if (!erreur) {
             [erreur, newState] = await contactServeur(formData);
@@ -38,39 +37,23 @@ export default function ContactForm() {
             newState.message.valeur = formData.get("message");
         }
 
-        const prenom = formData.get("prenom");
-        const nom = formData.get("nom");
-        const email = formData.get("email");
-        const sujet = formData.get("sujet");
-        const phone = formData.get("phone");
-        const message = formData.get("message");
-
-        console.log("Formulaire soumis :", {
-            prenom,
-            nom,
-            email,
-            sujet,
-            phone,
-            message
-        });
-
         return newState;
     };
 
 
     const [formState, formAction] = useActionState(handleSubmit, {
-        prenom: { valeur: "", erreur: null }, 
+        prenom: { valeur: "", erreur: null },
         nom: { valeur: "", erreur: null },
         email: { valeur: "", erreur: null },
-        sujet: { valeur: "", erreur: null },  
-        phone: { valeur: "", erreur: null },    
+        sujet: { valeur: "", erreur: null },
+        phone: { valeur: "", erreur: null },
         message: { valeur: "", erreur: null },
     });
 
     return (
         <div className={styles.container}>
             <form action={formAction} className={styles.form} noValidate>
-            {successMessage && <div className={styles.success}>{successMessage}</div>}
+                {successMessage && <div className={styles.success}>{successMessage}</div>}
                 <label>
                     Nom:
                     <input type="text" name="nom" defaultValue={formState.nom.valeur} />
