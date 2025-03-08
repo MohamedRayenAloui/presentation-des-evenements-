@@ -34,10 +34,9 @@ export async function generateMetadata({ params }) {
 const eventDetails = {
     "1": {
         name: "Tournoi CS:GO",
-        description: `
-        Plongez au cœur d'un tournoi intense de Counter-Strike: Global Offensive, où les meilleures équipes s'affrontent pour la gloire et des récompenses prestigieuses. 
-        Préparez-vous à des stratégies élaborées, des moments palpitants et des retournements de situation incroyables. 
-        Que vous soyez joueur ou spectateur, cet événement est une célébration de l'e-sport à son apogée.`,
+        description: `Plongez au cœur d'un tournoi intense de Counter-Strike: Global Offensive, où les meilleures équipes s'affrontent pour la gloire et des récompenses prestigieuses.` ,
+        description1: `Préparez- vous à des stratégies élaborées, des moments palpitants et des retournements de situation incroyables.`,
+        description2:`Que vous soyez joueur ou spectateur, cet événement est une célébration de l'e-sport à son apogée.`,
         date: "2025-02-15",
         time: "18:00",
         images: [csgo, csgo1], // Images associées à l'événement
@@ -55,10 +54,9 @@ const eventDetails = {
     },
     "2": {
         name: "Ligue Valorant",
-        description: `
-        Rejoignez-nous pour un événement spectaculaire dédié à Valorant, où les joueurs les plus talentueux et leurs équipes repoussent les limites du possible. 
-        Avec une ambiance électrique et des performances de classe mondiale, vivez une immersion totale dans l'univers compétitif de ce FPS emblématique. 
-        Préparez-vous à des duels épiques, des tactiques ingénieuses et une communauté passionnée !`,
+        description: ` Rejoignez-nous pour un événement spectaculaire dédié à Valorant, où les joueurs les plus talentueux et leurs équipes repoussent les limites du possible.`, 
+        description1:`Avec une ambiance électrique et des performances de classe mondiale, vivez une immersion totale dans l'univers compétitif de ce FPS emblématique.`, 
+        description2:`Préparez-vous à des duels épiques, des tactiques ingénieuses et une communauté passionnée !`,
         date: "2025-03-10",
         time: "20:00",
         images: [valo, valo1],
@@ -90,6 +88,8 @@ export default async function EventDetail({ params }) {
         <EventLayout
             name={event.name}
             description={event.description}
+            description1={event.description1}
+            description2={event.description}
             date={event.date}
             time={event.time}
             images={event.images}

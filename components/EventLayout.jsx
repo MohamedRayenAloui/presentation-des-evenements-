@@ -2,14 +2,15 @@
 
 "use client";
 
-// Importation du composant Image de Next.js et des styles CSS
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./EventLayout.module.css";
-import { useState } from "react";
 
 export default function EventLayout({
     name,
     description,
+    description1,
+    description2,
     date,
     time,
     images,
@@ -18,32 +19,66 @@ export default function EventLayout({
     children,
 }) {
     const [showTwitch, setShowTwitch] = useState(false);
+    const [isClient, setIsClient] = useState(false);
 
+    // ✅ Ensures this runs only on the client to prevent hydration mismatch
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
 
     return (
         <section className={styles.container}>
             <h1 className={styles.title}>{name}</h1>
             <p className={styles.description}>{description}</p>
+            <p className={styles.description}>{description1}</p>
+            <p className={styles.description}>{description2}</p>
             <p className={styles.dateTime}>
                 <strong>Date:</strong> {date} | <strong>Heure:</strong> {time}
             </p>
             <div className={styles.mediaContainer}>
-                {/* Affichage des images et de la vidéo en direct de l'événement */}
-                {images[0] && <Image src={images[0]} alt="Image 1" className={styles.image} width={800}
-                    height={450} sizes="(max-width: 768px) 100vw, 800px" priority quality={80}/>}
-                {iframeSrc && (
-                    <iframe
-                        src={`https://player.twitch.tv/?channel=${iframeSrc}&parent=localhost&autoplay=false`}
-                        frameBorder="0"
-                        allowFullScreen
-                        className={styles.iframe}
-                        title={`Vidéo en direct de l'événement - ${name}`}
+                {images[0] && (
+                    <Image
+                        src={images[0]}
+                        alt="Image de l'événement"
+                        width={600}
+                        height={340}
+                        sizes="(max-width: 768px) 100vw, 600px"
+                        quality={80}
+                        loading="lazy"
+                        className={styles.image}
                     />
                 )}
-                {images[1] && <Image src={images[1]} alt="Image 2" className={styles.image} width={800}
-                    height={450} sizes="(max-width: 768px) 100vw, 800px" loading="lazy" quality={80}/>}
+
+                {isClient && (
+                    !showTwitch ? (
+                        <button className={styles.twitchPlaceholder} onClick={() => setShowTwitch(true)}>
+                            Cliquez pour voir le stream
+                        </button>
+                    ) : (
+                        <iframe
+                            src={`https://player.twitch.tv/?channel=${iframeSrc}&parent=localhost&autoplay=false`}
+                            frameBorder="0"
+                            allowFullScreen
+                            className={styles.iframe}
+                            title={`Vidéo en direct de l'événement - ${name}`}
+                        />
+                    )
+                )}
+
+                {images[1] && (
+                    <Image
+                        src={images[1]}
+                        alt="Image supplémentaire de l'événement"
+                        width={600}
+                        height={340}
+                        sizes="(max-width: 768px) 100vw, 600px"
+                        quality={80}
+                        loading="lazy"
+                        className={styles.image}
+                    />
+                )}
             </div>
-            {/* Affichage des équipes participantes */}
+
             {teams && (
                 <div className={styles.teamsContainer}>
                     <h2>Équipes</h2>
@@ -61,7 +96,6 @@ export default function EventLayout({
                     </div>
                 </div>
             )}
-            {/* Affichage du contenu supplémentaire */}
             {children && <div className={styles.additionalContent}>{children}</div>}
         </section>
     );

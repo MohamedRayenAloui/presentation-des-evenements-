@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    compress: true, // Enables Gzip/Brotli compression
     experimental: {
         optimizeCss: true, // Speeds up CSS rendering
     },
