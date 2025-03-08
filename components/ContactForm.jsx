@@ -52,6 +52,7 @@ export default function ContactForm() {
 
     return (
         <div className={styles.container}>
+            <h1>Contactez-nous</h1>
             <form action={formAction} className={styles.form} noValidate>
                 {successMessage && <div className={styles.success}>{successMessage}</div>}
                 <label>

@@ -1,5 +1,6 @@
 /* Style pour le conteneur principal */
 .div {
+    background: linear-gradient(150deg, #0e0e0e 50%, #1a73e8 100%);
     color: white;
     text-align: center;
     display: flex;

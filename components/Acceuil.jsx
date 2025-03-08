@@ -1,5 +1,6 @@
 import Image from "next/image"
 import styles from "./Acceuil.module.css"
+import banner from "/public/banner.webp"
 
 export default function Acceuil() {
     return <>
@@ -10,7 +11,7 @@ export default function Acceuil() {
                 La plateforme incontournable pour les passionnés de jeux vidéo et d'esports !
             </p>
             <div className={styles.imageContainer}>
-                <Image src="/banner.png" alt="Bannière Esports" width={960} height={540} />
+                <Image src={banner} alt="Bannière Esports" width={800} height={400} priority sizes="(max-width: 768px) 100vw, 800px"/>
             </div>
         </section>
 
@@ -24,12 +25,12 @@ export default function Acceuil() {
                 <iframe
                     width="960"
                     height="540"
-                    src="https://www.youtube.com/embed/_7LzTtfjCyU?autoplay=1&mute=1&rel=0"
+                    src="https://www.youtube.com/embed/_7LzTtfjCyU?autoplay=0&mute=1&rel=0"
                     title="YouTube video player"
-                    frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen>
+                    allowFullScreen
+                    loading="lazy">
                 </iframe>
             </div>
         </section>

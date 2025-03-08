@@ -4,10 +4,31 @@
 import EventLayout from "@/components/EventLayout";
 import { notFound } from "next/navigation";
 
-import valo from "@/public/valorant.png";
-import valo1 from "@/public/valorant1.png";
-import csgo from "@/public/csgo.png";
-import csgo1 from "@/public/csgo1.png";
+import valo from "@/public/valorant.webp";
+import valo1 from "@/public/valorant1.webp";
+import csgo from "@/public/csgo.webp";
+import csgo1 from "@/public/csgo1.webp";
+
+/**
+ * @type {import("next").Metadata}
+ */
+
+export async function generateMetadata({ params }) {
+    const { id } = params;
+    const event = eventDetails[id];
+
+    if (!event) {
+        return {
+            title: "Événement non trouvé | Esports Hub",
+            description: "L'événement que vous recherchez n'existe pas ou a été supprimé.",
+        };
+    }
+
+    return {
+        title: `${event.name} | Esports Hub`,
+        description: `Découvrez les détails de l'événement ${event.name}, les équipes participantes et suivez l'action en direct sur Esports Hub !`,
+    };
+}
 
 // Détails des événements
 const eventDetails = {
