@@ -4,32 +4,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./EvenementPage.module.css";
-
-// Importation des images des jeux
-import valo from "/public/valorant.webp";
-import csgo from "/public/csgo.webp";
+import eventsData from "@/data/events.json";
 
 // Fonction principale qui affiche la page des événements
 export default function EvenementPage() {
-    // Données des événements
-    const events = [
-        {
-            id: "1",
-            name: "Tournoi CS:GO",
-            date: "2025-02-15",
-            time: "18:00",
-            description: "Un tournoi compétitif de Counter-Strike: Global Offensive.",
-            image: csgo,
-        },
-        {
-            id: "2",
-            name: "Ligue Valorant",
-            date: "2025-03-10",
-            time: "20:00",
-            description: "Compétition de haut niveau entre équipes professionnelles.",
-            image: valo,
-        },
-    ];
+    // Données des événements converties en tableau
+    const events = Object.values(eventsData);
 
     // Affichage des événements sous forme de cartes avec leurs détails 
     return (
@@ -44,7 +24,7 @@ export default function EvenementPage() {
                     >
                         <div className={styles.eventCard}>
                             <Image
-                                src={event.image}
+                                src={event.images[0]}
                                 alt={event.name}
                                 className={styles.eventImage}
                                 width={600}
@@ -54,7 +34,7 @@ export default function EvenementPage() {
                                 loading={index === 0 ? "eager" : "lazy"}
                             />
                             <h2>{event.name}</h2>
-                            <p>{event.description}</p>
+                            <p>{event.description0}</p>
                             <p>
                                 <strong>Date:</strong> {event.date} | <strong>Heure:</strong> {event.time}
                             </p>
