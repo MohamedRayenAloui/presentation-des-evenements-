@@ -11,7 +11,7 @@ export default function Acceuil() {
                 La plateforme incontournable pour les passionnés de jeux vidéo et d'esports !
             </p>
             <div className={styles.imageContainer}>
-                <Image src={banner} alt="Bannière Esports" width={800} height={400} priority sizes="(max-width: 768px) 100vw, 800px"/>
+                <Image src={banner} alt="Bannière Esports" width={800} height={400} priority sizes="(max-width: 768px) 100vw, 800px" />
             </div>
         </section>
 

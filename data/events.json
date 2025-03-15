@@ -1,0 +1,44 @@
+{
+  "1": {
+    "id": 1,
+    "name": "Tournoi CS:GO",
+    "description": "Plongez au cœur d'un tournoi intense de Counter-Strike...",
+    "description1": "Préparez-vous à des stratégies élaborées...",
+    "description2": "Que vous soyez joueur ou spectateur...",
+    "date": "2025-02-15",
+    "time": "18:00",
+    "images": ["/csgo.webp", "/csgo1.webp"],
+    "iframeSrc": "lirik_247",
+    "teams": [
+      {
+        "name": "Equipe A",
+        "members": ["Alice", "Bob", "Charlie", "David", "Eve"]
+      },
+      {
+        "name": "Equipe B",
+        "members": ["Frank", "Grace", "Heidi", "Ivan", "Judy"]
+      }
+    ]
+  },
+  "2": {
+    "id": 2,
+    "name": "Ligue Valorant",
+    "description": "Rejoignez-nous pour un événement spectaculaire...",
+    "description1": "Avec une ambiance électrique...",
+    "description2": "Préparez-vous à des duels épiques...",
+    "date": "2025-03-10",
+    "time": "20:00",
+    "images": ["/valorant.webp", "/valorant1.webp"],
+    "iframeSrc": "shrood",
+    "teams": [
+      {
+        "name": "Equipe X",
+        "members": ["Xavier", "Yara", "Zane", "Wanda", "Victor"]
+      },
+      {
+        "name": "Equipe Y",
+        "members": ["Uma", "Toby", "Sam", "Quinn", "Peter"]
+      }
+    ]
+  }
+}

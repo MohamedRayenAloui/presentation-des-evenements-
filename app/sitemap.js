@@ -2,6 +2,7 @@
  * @returns {import("next").MetadataRoute.Sitemap}
  */
 
+// Fonction qui génère les entrées pour le fichier sitemap.xml
 export default function sitemap() {
     return [
         {

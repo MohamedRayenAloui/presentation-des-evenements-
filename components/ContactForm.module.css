@@ -1,4 +1,4 @@
-/* Container to center the form */
+/* Conteneur pour centrer le formulaire */
 .container {
     padding: 30px;
     color: white;
@@ -14,17 +14,18 @@
     align-items: center;
 }
 
+/* Style pour le titre principal */
 .container h1 {
     font-size: 2rem;
     margin-bottom: 20px;
     letter-spacing: 1px;
-    position: relative; 
+    position: relative;
     overflow: hidden;
     animation: fadeInUp 0.8s ease forwards;
     opacity: 0;
 }
 
-/* Main form styling */
+/* Style principal du formulaire */
 .form {
     display: flex;
     flex-direction: column;
@@ -34,24 +35,26 @@
     text-align: center;
     width: 80%;
     max-width: 1200px;
-    position: relative; 
+    position: relative;
     overflow: hidden;
     animation: fadeInUp 0.8s ease forwards;
     opacity: 0;
 }
 
+/* Animation pour faire apparaître les éléments en glissant vers le haut */
 @keyframes fadeInUp {
     0% {
         transform: translateY(30px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0px);
         opacity: 1;
     }
 }
 
-/* Center labels */
+/* Centrer les labels */
 .form label {
     display: flex;
     flex-direction: column;
@@ -61,7 +64,7 @@
     text-align: left;
 }
 
-/* Input and textarea styling */
+/* Style pour les champs input et textarea */
 .form input,
 .form textarea {
     padding: 0.7rem;
@@ -74,11 +77,12 @@
     margin: 10px auto;
 }
 
-/* Prevent textarea from resizing */
+/* Empêcher le redimensionnement du textarea */
 .form textarea {
     resize: none;
 }
 
+/* Style pour le bouton de soumission */
 .form button {
     padding: 0.8rem 1.5rem;
     background: linear-gradient(135deg, #1a73e8, #135abe);
@@ -98,7 +102,7 @@
     z-index: 1;
 }
 
-/* Animated gradient background with shine */
+/* Fond animé avec un effet de brillance */
 .form button::before {
     content: "";
     position: absolute;
@@ -112,30 +116,32 @@
     z-index: 0;
 }
 
+/* Effet de brillance au survol */
 .form button:hover::before {
     left: 100%;
 }
 
-/* Hover - Add glow and slight scale */
+/* Effet de survol - Ajouter une lueur et un léger agrandissement */
 .form button:hover {
     background: linear-gradient(135deg, #135abe, #0f4ea6);
     transform: translateY(-2px) scale(1.05);
     box-shadow: 0 4px 15px rgba(26, 115, 232, 0.5);
 }
 
-/* Active (click) - Shrink slightly */
+/* Effet actif (clic) - Réduire légèrement */
 .form button:active {
     transform: scale(0.95);
     box-shadow: 0 2px 8px rgba(26, 115, 232, 0.3);
 }
 
-/* Error message styling */
+/* Style pour les messages d'erreur */
 .erreur {
     color: #ff4d4d;
     font-size: 0.9rem;
     margin-top: 4px;
 }
 
+/* Style pour les messages de succès */
 .success {
     margin-bottom: 15px;
     padding: 10px;
@@ -149,27 +155,26 @@
     margin: 0 auto;
 }
 
+/* Styles pour les écrans de taille moyenne et plus */
 @media screen and (min-width: 700px) {
     .form label {
         width: 70%;
     }
-    
 }
 
 @media screen and (min-width: 900px) {
     .form label {
         width: 70%;
     }
-    
 }
 
 @media screen and (min-width: 1200px) {
     .form label {
         width: 60%;
     }
-    
 }
 
+/* Permettre le redimensionnement vertical du textarea */
 .form textarea {
     resize: vertical;
 }

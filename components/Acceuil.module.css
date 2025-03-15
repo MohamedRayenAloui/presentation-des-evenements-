@@ -8,17 +8,19 @@
     border: 1px solid #1a73e8;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    position: relative; 
+    position: relative;
     overflow: hidden;
     animation: fadeInUp 0.8s ease forwards;
     opacity: 0;
 }
 
+/* Animation pour faire apparaître les sections en glissant vers le haut */
 @keyframes fadeInUp {
     0% {
         transform: translateY(30px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0px);
         opacity: 1;
@@ -94,11 +96,13 @@
     transition: transform 0.75s ease, box-shadow 0.75s ease;
 }
 
+/* Effet de zoom et d'ombre sur les images au survol */
 .imageContainer:hover img {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
 }
 
+/* Style pour les images sur les écrans de taille moyenne et plus */
 @media screen and (min-width: 768px) {
     .imageContainer img {
         width: 100%;

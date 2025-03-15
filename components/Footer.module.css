@@ -12,6 +12,7 @@
     margin-bottom: 15px;
 }
 
+/* Style pour les liens sociaux */
 .socialContainer a {
     margin: 0 15px;
     font-size: 1.5rem;
@@ -22,7 +23,7 @@
     justify-content: center;
 }
 
-/* New - directly target the icon */
+/* Cible directement l'icône */
 .socialContainer a svg {
     transition: transform 0.3s ease;
 }
@@ -41,16 +42,18 @@
     animation: glowPulse 2.5s infinite ease-in-out;
 }
 
-/* Glowing pulse animation */
+/* Animation de pulsation lumineuse */
 @keyframes glowPulse {
     0% {
         color: #1a73e8;
         text-shadow: 0 0 5px transparent;
     }
+
     50% {
         color: #ffffff;
         text-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
     }
+
     100% {
         color: #1a73e8;
         text-shadow: 0 0 5px transparent;

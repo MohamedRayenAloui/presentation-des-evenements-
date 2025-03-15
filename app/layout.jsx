@@ -9,6 +9,7 @@ import { Roboto, Poppins } from "next/font/google";
 import styles from "./layout.module.css";
 import "./globals.css";
 
+// Définition des polices de caractères à utiliser dans l'application
 const roboto = Roboto({
     subsets: ["latin"],
     weight: ["400", "700"],
@@ -28,6 +29,7 @@ const poppins = Poppins({
  * @type {import("next").Metadata}
  */
 
+// Définir les métadonnées pour l'application
 export const metadata = {
     title: "Esports Hub",
     description: "La plateforme incontournable des tournois et compétitions pour les passionnés de jeux vidéo et d'esports !",

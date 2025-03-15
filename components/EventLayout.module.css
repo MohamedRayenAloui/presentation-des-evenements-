@@ -10,6 +10,7 @@
     text-align: left;
 }
 
+/* Animation pour faire apparaître les éléments en glissant vers le haut */
 @keyframes fadeInUp {
     0% {
         transform: translateY(30px);
@@ -28,9 +29,9 @@
     margin-bottom: 15px;
     color: #1a73e8;
     position: relative;
-        overflow: hidden;
-        animation: fadeInUp 0.8s ease forwards;
-        opacity: 0;
+    overflow: hidden;
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
 }
 
 /* Style pour la description */
@@ -49,9 +50,9 @@
     font-size: 1rem;
     color: #aaa;
     position: relative;
-        overflow: hidden;
-        animation: fadeInUp 0.8s ease forwards;
-        opacity: 0;
+    overflow: hidden;
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
 }
 
 /* Conteneur pour les médias */
@@ -62,6 +63,7 @@
     margin: 20px 0;
 }
 
+/* Style pour les boutons dans le conteneur des médias */
 .mediaContainer button {
     background-color: #1a73e8;
     color: #ffffff;
@@ -95,9 +97,9 @@
     border-radius: 6px;
     margin-top: 20px;
     position: relative;
-        overflow: hidden;
-        animation: fadeInUp 0.8s ease forwards;
-        opacity: 0;
+    overflow: hidden;
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
 }
 
 /* Style pour les titres dans le conteneur des équipes */
@@ -144,11 +146,12 @@
     background-color: #121212;
     border-radius: 6px;
     position: relative;
-        overflow: hidden;
-        animation: fadeInUp 0.8s ease forwards;
-        opacity: 0;
+    overflow: hidden;
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
 }
 
+/* Styles pour les écrans de taille moyenne et plus petits */
 @media screen and (max-width: 768px) {
 
     .image,
@@ -157,5 +160,4 @@
         width: 90%;
         margin: 0 auto;
     }
-    
 }

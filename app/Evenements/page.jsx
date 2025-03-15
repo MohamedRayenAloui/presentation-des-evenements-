@@ -6,6 +6,7 @@ import EvenementPage from "@/components/EvenementPage";
  * @type {import("next").Metadata}
  */
 
+// Définir les métadonnées pour la page des événements
 export const metadata = {
     title: "Événements | Esports Hub",
     description: "Découvrez les événements à venir sur Esports Hub. Tournois, compétitions, matchs de haut niveau des jeux vidéo et d'esports !",

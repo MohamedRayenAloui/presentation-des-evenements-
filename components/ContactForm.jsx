@@ -1,11 +1,14 @@
+// Code: Composant ContactForm
 "use client";
 
+// Importer les hooks personnalisés
 import { useActionState, useState } from "react";
 import { validateContact } from "@/validation/contact";
 import contactServeur from "@/actions/contact";
 import { useRouter } from "next/navigation";
 import styles from "./ContactForm.module.css";
 
+// Définir le composant ContactForm
 export default function ContactForm() {
     const [successMessage, setSuccessMessage] = useState("");
 
@@ -15,10 +18,13 @@ export default function ContactForm() {
      */
     const handleSubmit = async (previousState, formData) => {
 
+        // Valider les données du formulaire
         let [erreur, newState] = validateContact(formData);
         if (!erreur) {
+            // Envoyer les données au serveur si aucune erreur de validation
             [erreur, newState] = await contactServeur(formData);
             if (!erreur) {
+                // Afficher un message de succès si l'envoi est réussi
                 setSuccessMessage("Nous avons bien reçu votre demande. Merci !");
                 setTimeout(() => {
                     setSuccessMessage("");
@@ -28,7 +34,7 @@ export default function ContactForm() {
         }
 
         if (erreur) {
-
+            // Mettre à jour l'état du formulaire avec les valeurs saisies en cas d'erreur
             newState.prenom.valeur = formData.get("prenom");
             newState.nom.valeur = formData.get("nom");
             newState.email.valeur = formData.get("email");
@@ -40,7 +46,7 @@ export default function ContactForm() {
         return newState;
     };
 
-
+    // Initialiser l'état du formulaire avec des valeurs par défaut
     const [formState, formAction] = useActionState(handleSubmit, {
         prenom: { valeur: "", erreur: null },
         nom: { valeur: "", erreur: null },

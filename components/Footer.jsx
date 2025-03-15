@@ -4,6 +4,7 @@
 import { FaFacebookF, FaTwitter, FaInstagram, FaTwitch } from "react-icons/fa";
 import styles from "./Footer.module.css";
 
+// Définir le composant Footer
 export default function Footer() {
     return (
         <footer className={styles.footer}>
