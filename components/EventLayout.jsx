@@ -8,7 +8,6 @@ import Image from "next/image";
 import styles from "./EventLayout.module.css";
 
 // Définir le composant EventLayout
-// Définir le composant EventLayout
 export default function EventLayout({
     name,
     description,
